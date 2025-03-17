@@ -1,13 +1,17 @@
-const menuIcon = document.querySelector('.hamburger');
+const menuIcon = document.querySelector('.nav-toggle');
 const menu = document.querySelector('.nav-links');
-let menuOpen = false;
+const links = document.querySelectorAll('.link')
 
-menuIcon.addEventListener('click',()=>{
-    if (!menuOpen) {
-        menu.classList.add('active')
-        menuOpen = true
-    }else if (menuOpen) {
-        menu.classList.remove('active')
-        menuOpen = false;
-    }
+
+
+menuIcon.addEventListener("click", ()=>{
+    menu.classList.toggle("active");
+
+
+})
+
+links.forEach(link =>{
+    link.addEventListener('click', ()=>{
+        menu.classList.remove('active');
+    })
 })
