@@ -493,6 +493,7 @@ h1 span{
         width: 100%;
         grid-template-columns: repeat(2,2fr);
         padding: 60px 20px;
+        z-index: -1;
     }
     .project{
         display: flex;
