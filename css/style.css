@@ -45,13 +45,14 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 10px;
 }
 .nav .logo h1{
     color: var(--font-color-secondary);
@@ -61,10 +62,9 @@ header{
     color: white;
     background: none;
     border: none;
-    font-size: 30px;
-    padding: 0 20px;
+    font-size: 25px;
+    padding: 0 10px;
     line-height: 60px;
-
     display: block;
     cursor: pointer;
 }   
@@ -78,7 +78,7 @@ header{
     flex-direction: column;
     position: fixed;
     left: 0;
-    top: 80px;
+    top: 70px;
     background-color: var(--bg-color);
     z-index: 1;
     padding: 0;
@@ -147,8 +147,9 @@ header{
 
 /* Hero */
 .hero{
-    margin-top: 100px;
-    padding: 30px;
+    margin-top: 70px;
+    padding: 0;
+
 }
 h1 span{
     display: block;
@@ -159,7 +160,8 @@ h1 span{
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 10px;
+    width: 100%;
     
     
 }
@@ -179,12 +181,13 @@ h1 span{
 }
 .hero-text{
     width: 100%;
+    padding: 10px;
 }
 .hero-text h1{
     font-size: 2.5rem;
 }
 .hero-text p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     padding: 10px 0;
 }
@@ -251,14 +254,15 @@ h1 span{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 0;
 }
 .about-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 10px;
+    width: 100%;
    
 }
 .about-img{
@@ -328,14 +332,13 @@ h1 span{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 0;
 }
 .skills-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     width: 100%;
 }
 .skills-content h2{
@@ -494,6 +497,10 @@ h1 span{
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.project-btn:hover{
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
 @media screen and (width > 768px) {
     .projects-content{
         width: 100%;
@@ -502,14 +509,12 @@ h1 span{
         width: 100%;
         grid-template-columns: repeat(2,2fr);
         padding: 60px 20px;
-        z-index: -1;
     }
     .project{
         display: flex;
         border-radius: 10px;
         padding: 10px;
-        position: relative;
-        cursor: pointer;
+        position: relative;   
     }
     .project img{
         width: 100%;
@@ -526,19 +531,13 @@ h1 span{
         flex-direction: column;
         align-items:end;
         justify-content: center;
-        gap: 5px;
         background-color: rgba(0, 77, 48, 0.9);
         backdrop-filter: blur(1px);
         border: 1px solid rgba(0, 77, 48, 0.18);
-
     }
     .project-text .description{
         font-size: 12px;
         line-height: 1.5;
-    }
-    .project-btn:hover{
-        background-color: var(--bg-color);
-        color: var(--font-color);
     }
 }
 
@@ -547,10 +546,11 @@ h1 span{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 0;
 }
 .contact-content{
-    padding: 1.5em;
+    padding:20px 10px;
+    width: 100%;
 }
 .contact-content h2{
     font-size: 2.5rem;
@@ -595,6 +595,7 @@ h1 span{
     background-color: var(--font-color-secondary);
     border-radius: 20px;
     color: var(--font-color-light);
+    transition: .3s ease;
     
 }
 .social-links a:hover{
