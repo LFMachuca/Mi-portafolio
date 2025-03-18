@@ -175,6 +175,7 @@ h1 span{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    box-shadow: 0px 0px 0px 100px var(--bg-secondary);
 }
 .hero-img img{
     width: 100%;
