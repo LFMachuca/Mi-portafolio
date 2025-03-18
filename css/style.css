@@ -288,6 +288,7 @@ h1 span{
     background-color: var(--bg-secondary);
     border-radius: 15px;
     box-shadow: 5px 5px 10px;
+    width: 95%;
 }   
 .about-text h2{
     font-size: 2.5rem;
@@ -345,6 +346,7 @@ h1 span{
     font-size: 2.5rem;
     padding: 20px;
     text-align: center;
+    padding: 20px 10px;
 }
 .skills-container{
     display: flex;
@@ -360,9 +362,9 @@ h1 span{
     align-items: center;
     justify-content: center;
     padding: 20px;
-    max-width: 300px;
+    width: 95%;
     background-color: var(--bg-secondary);
-    border-radius: 50px;
+    border-radius: 15px;
     box-shadow: 5px 5px 10px;
     
 }
@@ -404,11 +406,12 @@ h1 span{
 @media screen and (width > 768px){
     .skills-container{
         gap: 60px;
-        padding: 0;
+        padding: 30px;
         margin-top: 30px;
     }
     .skill{
         gap: 20px;
+        width: 30%;
     }
 
     .body{
@@ -424,14 +427,13 @@ h1 span{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
 }
 .projects-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 10px;
 }
 .projects-content h2{
     font-size: 2.5rem;
