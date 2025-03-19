@@ -9,7 +9,6 @@ Tecnologías utilizadas
 HTML5
 CSS3
 JavaScript
-[Otras tecnologías que utilizaste: React, Vue, Bootstrap, etc.]
 
 Características
 
@@ -18,14 +17,11 @@ Sección de proyectos con enlaces a demos y código fuente
 Información de contacto y enlaces a redes profesionales
 
 Despliegue
-El sitio está desplegado en [GitHub Pages/Netlify/Vercel/etc.] y se puede visitar en: [URL de tu sitio web]
+El sitio está desplegado en Vercel y se puede visitar en: https://leonmachuca.vercel.app/
 Próximas mejoras
 
  Añadir sección de blog
  Implementar modo oscuro
  Mejorar accesibilidad
 
-Contacto
 
-Correo: tu-email@ejemplo.com
-LinkedIn: Tu perfil de LinkedIn
